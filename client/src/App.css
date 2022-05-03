@@ -1,0 +1,18 @@
+.App{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.App-panel{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.get-articles-btn{
+    cursor: pointer;
+    padding: 10px 12px;
+    background: #0dd40d;
+    border: none;
+    border-radius: 3px;
+}
