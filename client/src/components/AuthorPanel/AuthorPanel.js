@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import useBd from "../../hooks/useBd";
 
-const AuthorPanel = ({setArticles}) => {
+const AuthorPanel = ({articles, setArticles}) => {
     const [nameAuthors, setNameAuthors] = useState([]);
     const [currentNameAuthor, setCurrentNameAuthor] = useState("");
     const {getNameAuthors, getArticles} = useBd();
@@ -14,7 +14,7 @@ const AuthorPanel = ({setArticles}) => {
         }
 
         getAuthors();
-    }, []);
+    }, [articles]);
 
 
     const handleChangeNameAuthor = (event) => {

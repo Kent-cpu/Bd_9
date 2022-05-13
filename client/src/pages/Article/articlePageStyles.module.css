@@ -1,0 +1,40 @@
+.article {
+    width: 900px;
+    margin-top: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.article__content{
+    margin-bottom: 40px;
+}
+
+.article__title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article__author{
+    margin-bottom: 20px;
+}
+
+.comments{
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.comments__title{
+    text-align: center;
+    padding: 5px 10px 5px 0px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 10px;
+}
+
+.comment{
+    margin-bottom: 20px;
+}
+
+.comment__text{
+    margin: 5px 0px 5px 15px;
+}

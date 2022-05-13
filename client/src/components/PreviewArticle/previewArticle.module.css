@@ -8,16 +8,26 @@
 
 .article__header{
     display: flex;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
-
-.article__header__title{
-    margin-bottom: 7px;
+.article__header__delete-btn{
+    cursor: pointer;
+    font-size: 21px;
 }
 
-
+.article__header__delete-btn:hover{
+    color: red;
+    transition: all 0.2s ease-in;
+}
 
 .article__body{
+    margin-bottom: 15px;
+}
 
+.article-open{
+    border: 0;
+    cursor: pointer;
+    padding: 7px 12px;
 }

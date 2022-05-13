@@ -14,8 +14,24 @@ const useBd = () => {
         return await request("/getAuthors");
     }
 
+    const getArticleByDate = async (startDate, endDate) => {
+        return await request(`/getArticlesByDate/${startDate}/${endDate}`);
+    }
 
-    return {getArticles, getNameAuthors};
+    const getTopArticles = async () => {
+        return await request("/getTopArticles");
+    }
+
+    const deleteArticle = async (id) => {
+        await request(`/deleteArticle/${id}`, "POST");
+    }
+
+    const saveArticle = async (dataArticle) => {
+        await request("/addArticle", "POST", dataArticle);
+    }
+
+
+    return {getArticles, getNameAuthors, getArticleByDate, getTopArticles, deleteArticle, saveArticle};
 };
 
 export default useBd;

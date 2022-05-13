@@ -13,6 +13,7 @@ const schemaArticle = new Schema({
     datePublication: {type: Date},
     tags: {type: Array},
     content: {type: String},
+    rating: {type: Number, required: false},
     userReviews: [schemaReview]
 });
 

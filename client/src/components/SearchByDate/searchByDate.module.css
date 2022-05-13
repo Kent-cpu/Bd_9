@@ -1,0 +1,14 @@
+.date-panel{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.date-panel__item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.date-panel__item__title{
+    margin-bottom: 5px;
+}
